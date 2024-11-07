@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -15,38 +15,46 @@
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 
-<body class="bg-success">
+<body class="bg-dark">
 
-    <!-- nav-->
-    <nav class="navbar navbar-dark bg-success-subtle" data-bs-theme="dark">
+    <!-- Barra de navegación con un color de fondo verde sutil (bg-success-subtle) -->
+    <nav class="navbar navbar-dark bg-secondary-subtle" data-bs-theme="dark">
         <div class=" container">
-            <span class="btn btn-outline-success">Usuariotech</span>
+            <span class="btn btn-outline-danger">Usuariotech</span>
         </div>
     </nav>
 
     <!-- login del inicio -->
     <div class="container mt-5">
-        <form action="/Bienvenido" method="Get">
-            <div class="card mx-auto bg-success-subtle p-5" data-bs-theme="dark" style="max-width: 24rem;">
+        <form action="/" method="post">
+            <div class="card mx-auto bg-secondary-subtle p-5" data-bs-theme="dark" style="max-width: 24rem;">
                 <div class="card-bod" ;>
+
+                    <!-- Título del formulario -->
                     <h2 class="card-title mb-4">Usuario</h2>
 
-                    <!-- Campo para el nombre de usuario -->
+                    <!-- Campo de entrada para el nombre de usuario -->
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="basic-addon1"><i class="ph-fill ph-user"></i></span>
-                        <input type="text" class="form-control is-valid bg-success-subtle" data-bs-theme="dark"
-                            placeholder="Username" aria-label="Nombre" aria-describedby="basic-addon1">
+                        <input type="text" class="form-control is-valid bg-dark" data-bs-theme="dark"
+                            placeholder="Username" aria-label="Nombre" name="nombre" aria-describedby="basic-addon1">
                     </div>
 
-                    <!-- Campo para la contraseña -->
+                    <!-- Campo de entrada para la contraseña -->
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="basic-addon1"><i class="ph-fill ph-password"></i></span>
-                        <input type="password" class="form-control is-valid bg-success-subtle" data-bs-theme="dark"
-                            placeholder="Contraseña" aria-label="Nombre" aria-describedby="basic-addon1">
+                        <input type="password" class="form-control is-valid bg-dark" data-bs-theme="dark"
+                            placeholder="Contraseña" aria-label="Nombre" name="contraseña"
+                            aria-describedby="basic-addon1">
 
+                        <!-- Botón de submit para enviar el formulario -->
                     </div>
-                    <button type="submit" class="btn btn-outline-success w-100">Ingresar</button>
+
+
+                    <input type="submit" class="btn btn-outline-success w-100" value="ingresar">
+
                 </div>
+
             </div>
         </form>
     </div>
